@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  /* font-family: "Castoro Titling", cursive; */
+  font-family: "EB Garamond", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=EB+Garamond&family=Poppins&display=swap");
+
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+.scroll-area {
+  scroll-snap-align: start;
+}
+
+.main {
+  display: flex;
+}
+
+.main img {
+  height: 100vh;
+  width: 40%;
+}
+
+.head {
+  width: calc(100% - 40%);
+  background-color: #000000;
+  color: #93b4d1;
+}
+.head h1,
+span {
+  display: block;
+  text-align: center;
+  margin-top: 20%;
+}
+.head span {
+  font-size: 1.5rem;
+  margin-top: 30vh;
+}
+
+.secondary {
+  height: 100vh;
+  background-color: #000000;
+  color: aliceblue;
+}
+
+.secondary h2 {
+  color: #93b4d1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3%;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.secondary h3,
+span {
+  font-size: 1.7rem;
+  margin: 2% 0% 0.7% 1.5%;
+  font-weight: 500;
+  color: #93b4d1;
+  text-decoration: underline;
+}
+.secondary span {
+  display: flex;
+  justify-content: end;
+  margin-right: 1.3%;
+  font-size: 1rem;
+  text-decoration: overline;
+}
+
+.secondary p {
+  margin: 0.7% 1.5% 0.7% 1.5%;
+  font-size: 1.1rem;
+}
